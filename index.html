@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE E-KIOSK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img
+        src="https://www.gsma.com/get-involved/gsma-membership/wp-content/uploads/2014/06/one_logo-002.png"
+        class="background-logo"
+        alt="Background Logo"
+    >
+
+    <div class="language-switch">
+        <img src="https://flagcdn.com/w40/al.png" alt="Albanian" class="flag" onclick="setLanguage('sq')">
+        <img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag" onclick="setLanguage('en')">
+    </div>
+
+    <!-- FIRST PAGE -->
+    <div class="container" id="homePage">
+
+        <img
+            src="https://www.gsma.com/get-involved/gsma-membership/wp-content/uploads/2014/06/one_logo-002.png"
+            alt="One Albania Logo"
+            class="logo"
+        >
+
+        <h1 id="mainTitle">ONE E-KIOSK</h1>
+
+        <p class="subtitle" id="subtitle">
+            Fast. Simple. Efficient.
+        </p>
+
+        <button class="start-btn" onclick="showServices()" id="startBtn">
+            Start
+        </button>
+
+    </div>
+
+    <!-- SECOND PAGE -->
+    <div class="service-page" id="servicePage">
+
+        <div class="welcome-section">
+            <h2 id="welcomeTitle">Welcome to One Albania</h2>
+            <p id="welcomeSubtitle">Choose a customer type</p>
+        </div>
+
+        <div class="services-row">
+
+            <button class="service-box" id="individualBtn">
+                Individual
+            </button>
+
+            <button class="service-box" id="businessBtn">
+                Business
+            </button>
+
+            <button class="service-box" id="guestBtn">
+                Guest
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
