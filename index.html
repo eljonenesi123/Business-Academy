@@ -36,32 +36,124 @@
             Fast. Simple. Efficient.
         </p>
 
-        <button class="start-btn" onclick="showServices()" id="startBtn">
+        <button class="start-btn" onclick="showPhonePage()" id="startBtn">
             Start
         </button>
 
     </div>
 
-    <!-- SECOND PAGE -->
-    <div class="service-page" id="servicePage">
+    <!-- PHONE NUMBER PAGE -->
+    <div class="auth-page" id="phonePage">
 
-        <div class="welcome-section">
-            <h2 id="welcomeTitle">Welcome to One Albania</h2>
-            <p id="welcomeSubtitle">Choose a customer type</p>
+        <div class="auth-card">
+
+            <h2 id="phoneTitle">Enter your mobile number</h2>
+
+            <p id="phoneSubtitle">
+                We will send you an OTP for verification
+            </p>
+
+            <div class="phone-input-box">
+                <span class="phone-icon">📱</span>
+                <span class="country-code">+355</span>
+
+                <input
+                    type="text"
+                    id="phoneNumber"
+                    placeholder="68 123 4567"
+                    maxlength="12"
+                >
+            </div>
+
+            <button class="primary-btn" onclick="showOtpPage()" id="sendOtpBtn">
+                Send OTP
+            </button>
+
+            <button class="back-btn" onclick="goHome()" id="backHomeBtn">
+                Back to Home
+            </button>
+
         </div>
 
-        <div class="services-row">
+    </div>
 
-            <button class="service-box" id="individualBtn">
-                Individual
+    <!-- OTP PAGE -->
+    <div class="auth-page" id="otpPage">
+
+        <div class="auth-card">
+
+            <h2 id="otpTitle">Enter OTP</h2>
+
+            <p id="otpSubtitle">
+                We have sent a 6-digit code to your phone
+            </p>
+
+            <div class="otp-boxes">
+
+                <input class="otp-input" maxlength="1" type="text">
+                <input class="otp-input" maxlength="1" type="text">
+                <input class="otp-input" maxlength="1" type="text">
+                <input class="otp-input" maxlength="1" type="text">
+                <input class="otp-input" maxlength="1" type="text">
+                <input class="otp-input" maxlength="1" type="text">
+
+            </div>
+
+            <p class="otp-hint" id="otpHint">
+                Demo OTP: 123456
+            </p>
+
+            <button class="primary-btn" onclick="showDashboard()" id="verifyBtn">
+                Verify
             </button>
 
-            <button class="service-box" id="businessBtn">
-                Business
+            <button class="back-btn" onclick="goPhonePage()" id="backBtn">
+                Back
             </button>
 
-            <button class="service-box" id="guestBtn">
-                Guest
+        </div>
+
+    </div>
+
+    <!-- DASHBOARD PAGE -->
+    <div class="dashboard-page" id="dashboardPage">
+
+        <div class="welcome-section">
+
+            <h2 id="dashboardTitle">
+                Welcome to One Albania
+            </h2>
+
+            <p id="dashboardSubtitle">
+                Your digital self-service hub
+            </p>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <button class="dashboard-card" id="payBillCard">
+                Pay Bill
+            </button>
+
+            <button class="dashboard-card" id="buyPackageCard">
+                Buy Package
+            </button>
+
+            <button class="dashboard-card" id="submitComplaintCard">
+                Submit Complaint
+            </button>
+
+            <button class="dashboard-card" id="checkCoverageCard">
+                Check Coverage
+            </button>
+
+            <button class="dashboard-card" id="bookAppointmentCard">
+                Book Appointment
+            </button>
+
+            <button class="dashboard-card" id="trackRequestCard">
+                Track Request
             </button>
 
         </div>
